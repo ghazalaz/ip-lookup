@@ -1,0 +1,9 @@
+#ryu command to run ryu controller :
+PYTHONPATH=. ryu/bin/ryu-manager ryu/ryu/app/ip-lookup.py ryu/ryu/app/ofctl_rest.py
+
+
+
+#mininet command to run my virtual network
+cd Mininet Setup
+sudo mn --custom topology.py --topo mytopo  --controller remote --pre config --mac
+
